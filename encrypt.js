@@ -1,0 +1,1 @@
+/* Module for the encryption of a ballot */

@@ -4,18 +4,12 @@ import { Text, View, Button } from 'react-native'
 
 export default function Start({ navigation }) {
 
-    const [choice, setChoice] = useState("");
-    const [phone, setPhone] = useState("");
-    const [candidates, setCandidates] = useState([]);
-    const [codes, setCodes] = useState([]);
-
-
-
     return (
         <View style={{ flex: 1, justifyContent: 'center' }}>
+            <Text>Pantalla de Start</Text>
             <Button
                 title="Comienza a Votar"
-                onPress={() => navigation.navigate("Ballot")} />
+                onPress={() => navigation.navigate("CardID")} />
         </View>
     )
 }

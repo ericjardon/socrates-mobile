@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
 
-export default function Ballot() {
+export default function Ballot({ navigation }) {
 
 
     const [choice, setChoice] = useState("");
@@ -22,9 +22,11 @@ export default function Ballot() {
 
     return (
         <View style={{ flex: 1, justifyContent: 'center' }}>
-            <Text>This is your Ballot. Tak your time to choose.</Text>
+            <Text>This is your Ballot. Take your time to choose.</Text>
             <TextInput placeholder="">Some input</TextInput>
-            <Button title="Sellar mi Voto" onPress={() => sealBallot()} />
+            <Button
+                title="Proceder a sellar mi Voto"
+                onPress={() => navigation.navigate("SealedBallot")} />
         </View>
     )
 }
