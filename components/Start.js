@@ -9,7 +9,7 @@ export default function Start({ navigation }) {
             <Text>Pantalla de Start</Text>
             <Button
                 title="Comienza a Votar"
-                onPress={() => navigation.navigate("CardID")} />
+                onPress={() => navigation.navigate("Disclaimer")} />
         </View>
     )
 }
