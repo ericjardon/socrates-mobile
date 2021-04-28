@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import StartScreen from './components/Start'
@@ -18,13 +18,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRoute="Start">
+        <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Start" component={StartScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Disclaimer" component={DisclaimerScreen} options={{ headerShown: false }} />
         <Stack.Screen name="CardID" component={CardIDScreen} options={{ headerShown: false }} />
         <Stack.Screen name="PhoneNumber" component={PhoneNumberScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Ballot" component={BallotScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SealedBallot" component={SealedBallotScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
+
         <Stack.Screen name="Confirmation" component={ConfirmationScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>

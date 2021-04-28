@@ -13,24 +13,25 @@ console.log(publicKey);
 let privateKey = rsa.getPrivateString();
 console.log(privateKey); */
 
-
 // ENCRYPTING
-let rsa_enc = new RSAKey();
-rsa_enc.setPublicString(PUB_KEY);
-let plainText = "Ricardo Anaya"
-let encrypted = rsa_enc.encrypt(plainText);
-console.log("Encrypting...");
-console.log(encrypted);
+const encrypt = (plainText) => {
+    console.log("Plaintext to encrypt:", plainText);
+    var rsa = new RSAKey();
+    rsa.setPublicString(PUB_KEY);
+    let encrypted = rsa.encrypt(plainText);
+    console.log("Encrypting...");
+    console.log(encrypted);
+}
 
 
 // DECRYPTING
-rsa_enc.setPrivateString(PRIV_KEY);
+/* rsa_enc.setPrivateString(PRIV_KEY);
 let decrypted = rsa_enc.decrypt(encrypted);
 console.log("Decrypting...")
-console.log(decrypted);
+console.log(decrypted); */
 
 
-
+module.exports = encrypt;
 
 /* var RSAKey = require('react-native-rsa');
 const bits = 1024;
