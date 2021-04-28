@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
-import s from '../style'
 
-// Página que se muestra después de dar en Sellar mi voto.
-// Aquí aparecen opciones para ver el hash, y para hacer submit del voto.
-// Se envía al Back: {tel: , encryptedVote: , oneTimeCode:,}
-
-
-export default function SealedBallot({ navigation }) {
+export default function Elementos({ navigation }) {
+    // Para este punto se limpia la información local guardada en la aplicación:
+    // el número de teléfono, el numero de credencial, 
     return (
         <View style={{ flex: 1, justifyContent: 'space-between' ,display: "flex",flexDirection: "column" ,alignItems: 'center', marginTop: 30}}>
             <Text style={{ textAlign:'center', fontSize:25}}>Sistema de Votacion Electoral</Text>
@@ -22,7 +18,6 @@ export default function SealedBallot({ navigation }) {
                 <Button
                 title="Aceptar"
                 color= "white"
-                title="Aceptar"
                 onPress={() => navigation.navigate("CardID")} />
             </View>
         </View>

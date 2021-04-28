@@ -10,6 +10,7 @@ import CardIDScreen from './components/CardID'
 import ConfirmationScreen from './components/Confirmation'
 import PhoneNumberScreen from './components/PhoneNumber'
 import AuthScreen from './components/Auth'
+import ElementosScreen from './components/Elementos'
 import DisclaimerScreen from './components/Disclaimer'
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ export default function App() {
       <Stack.Navigator initialRoute="Start">
         <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Start" component={StartScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Elementos" component={ElementosScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Disclaimer" component={DisclaimerScreen} options={{ headerShown: false }} />
         <Stack.Screen name="CardID" component={CardIDScreen} options={{ headerShown: false }} />
         <Stack.Screen name="PhoneNumber" component={PhoneNumberScreen} options={{ headerShown: false }} />
