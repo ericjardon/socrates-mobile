@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
+import s from '../style'
+
 
 export default function Ballot({ navigation }) {
-
-
     const [choice, setChoice] = useState("");
     const [phone, setPhone] = useState("");
     const [candidates, setCandidates] = useState([

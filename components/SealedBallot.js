@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
+import s from '../style'
 
 // Página que se muestra después de dar en Sellar mi voto.
 // Aquí aparecen opciones para ver el hash, y para hacer submit del voto.

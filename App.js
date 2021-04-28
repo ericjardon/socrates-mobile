@@ -17,11 +17,11 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRoute="PhoneNumber">
-        <Stack.Screen name="PhoneNumber" component={PhoneNumberScreen} options={{ headerShown: false }} />
+      <Stack.Navigator initialRoute="Start">
         <Stack.Screen name="Start" component={StartScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Disclaimer" component={DisclaimerScreen} options={{ headerShown: false }} />
         <Stack.Screen name="CardID" component={CardIDScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="PhoneNumber" component={PhoneNumberScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Ballot" component={BallotScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SealedBallot" component={SealedBallotScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
@@ -31,11 +31,11 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
+/* const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+}); */

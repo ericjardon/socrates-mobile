@@ -17,16 +17,26 @@ export default function PhoneNumber({ navigation }) {
     }
 
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <View style={{}}>
-                <Text style={s.title}>Sistema de Votación Electrónico</Text>
+        <View style={s.container} >
+            <View style={s.pageContainer}>
+                <View style={s.titleContainer}>
+                    <Text style={s.title}>Sistema de Votación Electrónico</Text>
+                </View>
+
+                <View style={s.bodyContainer}>
+                    <TextInput
+                        style={s.input}
+                        onChangeText={(value) => setPhone(value)}
+                        value={phone} />
+                    <View
+                        style={s.button}>
+                        <Button
+                            title="Continuar a Boleta"
+                            onPress={() => navigateNext("Ballot")} />
+                    </View>
+                </View>
+
             </View>
-            <TextInput
-                onChangeText={(value) => setPhone(value)}
-                value={phone} />
-            <Button
-                title="Continuar a Boleta"
-                onPress={() => navigateNext("Ballot")} />
-        </View>
+        </ View>
     )
 }

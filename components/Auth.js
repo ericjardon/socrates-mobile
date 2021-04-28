@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
+import s from '../style'
 
 
 // Al hacer submit, se muestra esta pantalla para hacer la autenticación del voto

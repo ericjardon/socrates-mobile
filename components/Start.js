@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Text, View, Button } from 'react-native'
+import s from '../style'
 
 
 export default function Start({ navigation }) {

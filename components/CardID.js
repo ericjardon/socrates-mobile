@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
+import s from '../style'
 
 
 export default function CardID({ navigation }) {
