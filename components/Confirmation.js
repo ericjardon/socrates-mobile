@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
+import s from '../style'
+
 
 export default function Confirmation({ navigation }) {
     // Para este punto se limpia la información local guardada en la aplicación:

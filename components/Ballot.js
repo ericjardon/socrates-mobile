@@ -7,6 +7,7 @@ import { Card, Icon, CardContent } from 'react-native-elements'
 export default function Ballot({ navigation }) {
 
 
+export default function Ballot({ navigation }) {
     const [choice, setChoice] = useState("");
     const [phone, setPhone] = useState("");
     const [candidates, setCandidates] = useState([
