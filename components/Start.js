@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Text, View, Button } from 'react-native'
 import s from '../style'
+import encrypt from '../encrypt'
 
 
 export default function Start({ navigation }) {
-
+    console.log(encrypt);
     return (
         <View style={{ flex: 1, justifyContent: 'center' }}>
             <Text>Pantalla de Start</Text>
