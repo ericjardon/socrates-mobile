@@ -45,16 +45,26 @@ export default StyleSheet.create({
         textAlign: 'center',
         width: 250,
         margin: 12,
-        borderWidth: 1,
         fontSize: 28,
     },
 
     inputcontainer: {
-        borderColor: 'blue',
-        borderWidth: 3,
+        borderColor: 'grey',
+        borderWidth: 2,
     },
 
     buttonContainer: {
         marginTop: "10%",
+    },
+
+    modal: {
+        backgroundColor: "#333",
+        position: "absolute",
+        left: 0,
+        right: 0,
+        bottom: 0,
+        justifyContent: "center",
+        alignItems: "center",
+        height: "40%"
     }
 });

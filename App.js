@@ -26,6 +26,7 @@ export default function App() {
         <Stack.Screen name="SealedBallot" component={SealedBallotScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Confirmation" component={ConfirmationScreen} options={{ headerShown: false }} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
