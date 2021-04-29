@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import { View, Text, Button, TextInput, Image } from 'react-native'
 import s from '../style'
 
-export default function PhoneNumber({ navigation }) {
-
-    const [message, setMessage] = useState("(OPCIONAL)");
+export default function PhoneNumber({ navigation, route }) {
 
     const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("(OPCIONAL)");
+    const { cve } = route.params;  // clave elector
+
+    console.log("Past cve", cve);
 
     const navigateNext = (name) => {
         console.log("Navigate Next", name);
@@ -17,8 +19,9 @@ export default function PhoneNumber({ navigation }) {
             setMessage("(OPCIONAL)");
         }
         console.log("Navigating next");
-        navigation.navigate(name);
+        navigation.navigate(name, { phone, cve });
     }
+
 
     return (
         <View style={s.container} >
@@ -51,7 +54,7 @@ export default function PhoneNumber({ navigation }) {
             <View style={s.buttonContainer}>
                 <Button
                     title="Continuar a Boleta"
-                    onPress={() => navigateNext("Ballot")} />
+                    onPress={() => navigateNext("Ballot", { cve, phone })} />
             </View>
         </ View>
     )

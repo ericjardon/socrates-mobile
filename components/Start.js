@@ -9,7 +9,13 @@ export default function Start({ navigation }) {
     // navigation.navigate("Disclaimer")
     return (
         <View style={s.container}>
-            <View style={s.titleContainer}>
+            <View style={{
+                width: '100%',
+                paddingHorizontal: 8,
+                marginTop: '20%',
+                marginBottom: '20%',
+                alignItems: 'center',
+            }}>
                 <Text style={s.title}>Bienvenido al Sistema de Votación Electrónico.</Text>
             </View>
 
@@ -23,7 +29,7 @@ export default function Start({ navigation }) {
             <View style={s.buttonContainer}>
                 <Button
                     style={s.button}
-                    title="Siguiente"
+                    title="Iniciar"
                     onPress={() => navigation.navigate("Elementos")} />
             </View>
         </View>

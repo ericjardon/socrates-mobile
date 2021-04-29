@@ -4,6 +4,9 @@ import s from '../style'
 
 
 export default function CardID({ navigation }) {
+
+    const [cve, setCve] = useState("");
+
     return (
         <View style={s.container}>
             <View style={s.titleContainer}>
@@ -25,13 +28,14 @@ export default function CardID({ navigation }) {
                 <TextInput
                     style={{ fontSize: 28, width: 300, textAlign: 'center' }}
                     placeholder="GMVLMR8007050"
-                    keyboardType="numeric"
+                    value={cve}
+                    onChangeText={(value) => setCve(value)}
                 />
             </View>
             <View style={s.buttonContainer}>
                 <Button
                     title="Siguiente"
-                    onPress={() => navigation.navigate("PhoneNumber")} />
+                    onPress={() => navigation.navigate("PhoneNumber", { cve })} />
             </View>
         </View>
     )

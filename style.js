@@ -7,8 +7,7 @@ export default StyleSheet.create({
         justifyContent: 'center',
         height: '100%',
         width: '100%',
-        borderColor: 'green',
-        borderWidth: 3,
+
     },
 
     pageContainer: {
@@ -30,8 +29,6 @@ export default StyleSheet.create({
         width: '100%',
         paddingHorizontal: 8,
         alignItems: 'center',
-        borderColor: 'pink',
-        borderWidth: 1,
     },
 
     subtitle: {
@@ -41,8 +38,7 @@ export default StyleSheet.create({
 
     subtitleContainer: {
         marginTop: '15%',
-        borderColor: 'orange',
-        borderWidth: 3,
+        paddingHorizontal: 8,
     },
 
     input: {
@@ -60,7 +56,5 @@ export default StyleSheet.create({
 
     buttonContainer: {
         marginTop: "10%",
-        borderColor: 'pink',
-        borderWidth: 3,
     }
 });
