@@ -11,7 +11,7 @@ export default function Auth({ navigation }) {
                 Utiliza tu huella digital.</Text>
             <Image
                 style={{ width: "50%" }}
-                source={{ uri: '../assets/icon.png' }}
+                source={require('../assets/fingerprint.png')}
             />
             <Button
                 title="Siguiente"
