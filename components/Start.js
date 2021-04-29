@@ -8,23 +8,23 @@ export default function Start({ navigation }) {
     console.log("All good", encrypt);
     // navigation.navigate("Disclaimer")
     return (
-        <View style={{ flex: 1, justifyContent: 'space-between', display: "flex", flexDirection: "column", alignItems: 'center', marginTop: 30 }}>
-            <Text style={{ textAlign: 'center', fontSize: 25 }}>Bienvenido al sistema de Votacion Electoral</Text>
-            <Text style={{ textAlign: 'center', fontSize: 15, height: 300, width: 350 }}>Si estas listo para votar presiona "sigiente",
-            recuerda que debes tener a la mano tu credencial para votar</Text>
+        <View style={s.container}>
+            <View style={s.titleContainer}>
+                <Text style={s.title}>Bienvenido al Sistema de Votación Electrónico.</Text>
+            </View>
 
-            <Image
-                style={{ width: 200, height: 200 }}
-                source={require('../assets/images/caja.png')}
-            />
+            <View style={{ margin: 20 }}>
+                <Image
+                    style={{ width: 200, height: 200 }}
+                    source={require('../assets/images/caja.png')}
+                />
+            </View>
 
-
-            <View style={{ backgroundColor: '#87CEFA', margin: 15 }}>
+            <View style={s.buttonContainer}>
                 <Button
-
+                    style={s.button}
                     title="Siguiente"
-                    color="white"
-                    onPress={() => navigation.navigate("CardID")} />
+                    onPress={() => navigation.navigate("Elementos")} />
             </View>
         </View>
     )

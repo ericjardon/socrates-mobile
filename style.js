@@ -7,36 +7,60 @@ export default StyleSheet.create({
         justifyContent: 'center',
         height: '100%',
         width: '100%',
+        borderColor: 'green',
+        borderWidth: 3,
     },
+
     pageContainer: {
         backgroundColor: '#ffff',
         height: '100%',
         width: '100%',
     },
+
     title: {
         fontWeight: "bold",
-        color: "grey",
+        color: "black",
         fontSize: 32,
         textAlign: 'center',
     },
+
     titleContainer: {
-        marginTop: '30%',
+        position: 'absolute',
+        top: '10%',
         width: '100%',
+        paddingHorizontal: 8,
         alignItems: 'center',
-    },
-    bodyContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    input: {
-        height: 40,
-        width: 120,
-        textAlign: 'center',
-        margin: 12,
+        borderColor: 'pink',
         borderWidth: 1,
     },
-    button: {
-        marginTop: 30,
+
+    subtitle: {
+        fontSize: 22,
+        textAlign: 'center',
+    },
+
+    subtitleContainer: {
+        marginTop: '15%',
+        borderColor: 'orange',
+        borderWidth: 3,
+    },
+
+    input: {
+        textAlign: 'center',
+        width: 250,
+        margin: 12,
+        borderWidth: 1,
+        fontSize: 28,
+    },
+
+    inputcontainer: {
+        borderColor: 'blue',
+        borderWidth: 3,
+    },
+
+    buttonContainer: {
+        marginTop: "10%",
+        borderColor: 'pink',
+        borderWidth: 3,
     }
 });

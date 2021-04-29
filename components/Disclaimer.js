@@ -7,9 +7,8 @@ export default function Disclaimer({ navigation }) {
     return (
         <View style={{ flex: 1, justifyContent: 'center' }}>
             <Text>
-                Para validar tu identidad necesitamos tu número de
-                credencial de elector, tu huella digital, acceso a tu cámara frontal,
-                y un número de celular con el que podrás verificar que tu voto fue emitido correctamente.
+                Para autentificar tu identidad necesitaremos tu clave de elector, tu huella digital
+                y opcionalmente un número de celular con el que podrás validar que tu voto fue emitido correctamente.
             </Text>
             <Button
                 title="Aceptar"

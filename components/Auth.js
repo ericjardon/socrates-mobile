@@ -6,11 +6,13 @@ import s from '../style'
 
 export default function Auth({ navigation }) {
     return (
-        <View style={{ flex: 1, justifyContent: 'center' }}>
-            <Text>Necesitamos autenticar que eres tú.
+        <View style={s.container}>
+            <View style={s.subtitleContainer}>
+                <Text>Necesitamos autenticar que eres tú.
                 Utiliza tu huella digital.</Text>
+            </View>
             <Image
-                style={{ width: "50%" }}
+                style={{ width: 220, height: 220 }}
                 source={require('../assets/fingerprint.png')}
             />
             <Button

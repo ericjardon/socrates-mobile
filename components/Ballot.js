@@ -174,13 +174,12 @@ export default function Ballot({ navigation }) {
                 </View>
 
             </View>
-
-            <View style={{ margin: 35, backgroundColor: '#87CEFA', width: 150 }}>
-
+            <View style={{ width: "80%", marginTop: '5%' }}><Text style={{ textAlign: 'center' }}>Cuando estés listo, presiona "sellar mi voto" para encriptar tu selección
+                 y proceder a la autentificación.</Text>
+            </View>
+            <View style={{ position: 'absolute', bottom: "5%", width: 150 }}>
                 <Button
-                    buttonStyle={{ marginBottom: 15 }}
-                    title="Votar"
-                    color="white"
+                    title="Sellar mi Voto"
                     onPress={() => navigation.navigate("SealedBallot")} />
             </View>
         </View>

@@ -1,26 +1,37 @@
 import React, { useState } from 'react'
-import { View, Text, Button, TextInput } from 'react-native'
+import { View, Text, Button, TextInput, Image } from 'react-native'
 import s from '../style'
 
 
 export default function CardID({ navigation }) {
     return (
-        <View style={{ flex: 1, justifyContent: 'center' ,display: "flex",flexDirection: "column" ,alignItems: 'center', marginTop: 35}}>
-            <View style={{ flex: 1, justifyContent: 'space-between' ,display: "flex",flexDirection: "column" ,alignItems: 'center'}}>
-                <Text style={{ textAlign:'center', marginBottom: 10, fontSize:25, marginBottom: 20}}>sistema de Votacion Electoralo</Text>
-                <Text style={{ textAlign:'center', marginBottom: 10, fontSize:25,marginBottom: 20}}>Ingresa tu clave de elector</Text>
+        <View style={s.container}>
+            <View style={s.titleContainer}>
+                <Text style={s.title}>
+                    Sistema de Votación Electrónico
+                </Text>
+            </View>
+            <View style={s.subtitleContainer}>
+                <Text style={s.subtitle}>Ingresa tu clave de elector, la cual se encuentra {"\n"}
+                en la parte frontal de tu credencial como se muestra. </Text>
+            </View>
+            <View style={{ marginVertical: '10%' }}>
+                <Image
+                    style={{ width: 320, height: 200, resizeMode: 'stretch' }}
+                    source={require('../assets/CVE2.png')}
+                />
+            </View>
+            <View style={s.inputcontainer}>
                 <TextInput
-                    style={{fontSize:20,marginBottom: 20}}
-                    placeholder="UML00123Y"
+                    style={{ fontSize: 28, width: 300, textAlign: 'center' }}
+                    placeholder="GMVLMR8007050"
                     keyboardType="numeric"
                 />
-                <View style={{ backgroundColor: '#87CEFA', margin: 15}}>
-                    <Button
-                
-                        title="Ingresa el número de tu credencial para votar."
-                        color="white"
-                        onPress={() => navigation.navigate("PhoneNumber")} />
-                </View>
+            </View>
+            <View style={s.buttonContainer}>
+                <Button
+                    title="Siguiente"
+                    onPress={() => navigation.navigate("PhoneNumber")} />
             </View>
         </View>
     )

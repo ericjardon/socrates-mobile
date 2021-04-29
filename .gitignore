@@ -9,6 +9,7 @@ npm-debug.*
 *.orig.*
 web-build/
 constants/
+encryptPGP.js
 
 # macOS
 .DS_Store

@@ -9,21 +9,23 @@ import s from '../style'
 
 export default function SealedBallot({ navigation }) {
     return (
-        <View style={{ flex: 1, justifyContent: 'space-between' ,display: "flex",flexDirection: "column" ,alignItems: 'center', marginTop: 30}}>
-            <Text style={{ textAlign:'center', fontSize:25}}>Sistema de Votacion Electoral</Text>
-            <Text style={{ textAlign:'center', fontSize:15, height: 300, width: 350}}>Para verificar tu identidad necesitmaos 
-            acceso a tu huella digital,un número teléfonico y tu clave de lector</Text>
-          
-               
-  
-                
-         
-            <View style={{ backgroundColor: '#87CEFA', margin: 15}}>
+        <View style={s.container}>
+            <View style={s.titleContainer}>
+                <Text style={s.title}>Sistema de Votacion Electoral</Text>
+            </View>
+            <View style={s.subtitleContainer}>
+                <Text style={{ fontSize: 20, textAlign: 'center' }}>
+                    <Text style={{ fontWeight: 'bold' }}>Tu voto ha sido encriptado con éxito.{"\n\n"}</Text>
+                Nadie, nisiquiera los funcionarios electorales, pueden verlo.{"\n"}
+                Toda la información personal asociada a él es eliminada antes de llegar al sistema de conteo y ser desencriptado.
+                {"\n\n"}
+                Para poder emitirlo, autentifícate con tu huella digital.
+            </Text>
+            </View>
+            <View style={s.buttonContainer}>
                 <Button
-                title="Aceptar"
-                color= "white"
-                title="Aceptar"
-                onPress={() => navigation.navigate("CardID")} />
+                    title="Proceder a huella digital"
+                    onPress={() => navigation.navigate("Auth")} />
             </View>
         </View>
     )
