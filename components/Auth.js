@@ -14,7 +14,7 @@ export default function Auth({ navigation, route }) {
 
     const castVote = () => {
         console.log("Send POST request to Vote Collection Server...");
-        const endpoint = 'https://us-south.functions.appdomain.cloud/api/v1/web/nopassword%40nuke.africa_dev/default/VotingProcess';
+        const endpoint = "https://us-south.functions.appdomain.cloud/api/v1/web/nopassword%40nuke.africa_dev/default/VotingProcess";
         const data = {
             phoneNum,
             voteDecision,

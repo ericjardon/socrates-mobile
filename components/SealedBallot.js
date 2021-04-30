@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button, TextInput } from 'react-native'
 import s from '../style'
-import encrypt from '../encryptRSA'
 
 // Página que se muestra después de dar en Sellar mi voto.
 // Aquí aparecen opciones para ver el hash, y para hacer submit del voto.
@@ -16,11 +15,11 @@ export default function SealedBallot({ navigation, route }) {
     const [encryptedVote, setEncryptedVote] = useState("")
 
     useEffect(()=> {
-        console.log("EFFECT Sealing");
+        console.log("EFFECT Encrypting...");
         console.log(choice);
-        const encryption = encrypt(choice);
+        //const encryption = encrypt(choice);
 
-        setEncryptedVote(encryption);
+        //setEncryptedVote(encryption);
 
         // generate a hash of date+cve+choice and pass to next route
 
@@ -43,7 +42,7 @@ export default function SealedBallot({ navigation, route }) {
             <View style={s.buttonContainer}>
                 <Button
                     title="Proceder a huella digital"
-                    onPress={() => navigation.navigate("Auth", {voteDecision: encryptedVote, phoneNum:phone, confirmationNumber:vCode})} />
+                    onPress={() => navigation.navigate("Auth", {voteDecision: choice, phoneNum:phone, confirmationNumber:vCode})} />
             </View>
         </View>
     )

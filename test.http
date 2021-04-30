@@ -1,0 +1,8 @@
+POST https://us-south.functions.appdomain.cloud/api/v1/web/nopassword%40nuke.africa_dev/default/VotingProcess
+Content-Type: application/json
+
+{
+    "phoneNum":"5555555555",
+    "voteDecision":"qwerty",
+    "confirmationNumber":""
+}
