@@ -30,3 +30,9 @@ This Socrates mobile front end prototype uses:
 - RSA encryption 
 - React Native UI
 - IBM Cloud functions as an endpoint for the casting https request
+
+### Contributos
+This project and proposal was possible thanks to: Lia, Oscar, Karla and Eric.
+
+
+
