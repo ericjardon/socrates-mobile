@@ -31,7 +31,7 @@ This Socrates mobile front end prototype uses:
 - React Native UI
 - IBM Cloud functions as an endpoint for the casting https request
 
-### Contributos
+### Contributors
 This project and proposal was possible thanks to: Lia, Oscar, Karla and Eric.
 
 
