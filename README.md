@@ -8,6 +8,8 @@ Socrates is an **auditable**, **coercion-resistant**, **individually and univers
 
 Socrates looks to serve as a simple, efficient and secure solution for remote voting in the context of social-distancing, as well as enabling groups that were excluded from the voting process before due to physical reasons, like people in retirement homes, hospitals, offshore, expats, and others unable to leave their homes.
 
+<img src="./assets/Socrates_Arch.png"/>
+
 ### Socrates Mobile Application
 The application prototype is built using React Native and Expo, and performs a single post request to IBM cloud and only after authenticating, to reduce the probability of MiTM attacks and ensure transparency of the system at the same time.
 
