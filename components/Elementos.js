@@ -19,8 +19,7 @@ export default function Elementos({ navigation }) {
                     <Text style={{ fontWeight: "bold" }}>4.</Text> Autentifica tu identidad con tu huella digital para enviar tu voto al sistema de conteo.{"\n"}
                     <Text style={{ fontWeight: "bold" }}>5.</Text> Puedes votar cuantas veces quieras. Solo el último voto emitido será tomado en cuenta.{"\n"}
                 </Text>
-            </View>
-
+            </View>            
             <View style={{ backgroundColor: '#87CEFA', marginTop: '20%' }}>
                 <Button
                     title="Aceptar"
